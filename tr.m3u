@@ -1,0 +1,643 @@
+#EXTM3U url-tvg="http://localiptv.site:85/xmltv.php?username=jozsefmulleruj&password=jozsefmulleruj,http://kaantv.site:8000/xmltv.php?username=kaan21084&password=rgdt4f581r8fd4d45e"
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK S SPORTS PREMIER LEAGUE" tvg-logo="" group-title="英超",SPORT UK S SPORTS PREMIER LEAGUE
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/754.ts
+#EXTINF:-1 tvg-id="" tvg-name="ZA SUPERSPORT PREMIER LEAGUE" tvg-logo="" group-title="英超",ZA SUPERSPORT PREMIER LEAGUE
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6278.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT ES MOVISTAR LALIGA" tvg-logo="" group-title="西甲",SPORT ES MOVISTAR LALIGA
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/945.ts
+#EXTINF:-1 tvg-id="" tvg-name="AR BEIN SPORTS MAX 2" tvg-logo="" group-title="BEIN",AR BEIN SPORTS MAX 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/47455.ts
+#EXTINF:-1 tvg-id="" tvg-name="AU BEIN SPORTS 1" tvg-logo="" group-title="BEIN",AU BEIN SPORTS 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/13226.ts
+#EXTINF:-1 tvg-id="" tvg-name="AU BEIN SPORTS 2" tvg-logo="" group-title="BEIN",AU BEIN SPORTS 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/13227.ts
+#EXTINF:-1 tvg-id="" tvg-name="AU BEIN SPORTS 3" tvg-logo="" group-title="BEIN",AU BEIN SPORTS 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/13228.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR BEIN SPORTS 1" tvg-logo="" group-title="BEIN",SPORT AR BEIN SPORTS 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/776.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR BEIN SPORTS 10" tvg-logo="" group-title="BEIN",SPORT AR BEIN SPORTS 10
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/785.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR BEIN SPORTS 2" tvg-logo="" group-title="BEIN",SPORT AR BEIN SPORTS 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/777.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR BEIN SPORTS 3" tvg-logo="" group-title="BEIN",SPORT AR BEIN SPORTS 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/778.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR BEIN SPORTS 4" tvg-logo="" group-title="BEIN",SPORT AR BEIN SPORTS 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/779.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR BEIN SPORTS 5" tvg-logo="" group-title="BEIN",SPORT AR BEIN SPORTS 5
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/780.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR BEIN SPORTS 6" tvg-logo="" group-title="BEIN",SPORT AR BEIN SPORTS 6
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/781.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR BEIN SPORTS 7" tvg-logo="" group-title="BEIN",SPORT AR BEIN SPORTS 7
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/782.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR BEIN SPORTS 9" tvg-logo="" group-title="BEIN",SPORT AR BEIN SPORTS 9
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/784.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR BEIN SPORTS NEWS" tvg-logo="" group-title="BEIN",SPORT AR BEIN SPORTS NEWS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/789.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT ES BEINSPORT" tvg-logo="" group-title="BEIN",SPORT ES BEINSPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/946.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FR BEIN SPORTS 1" tvg-logo="" group-title="BEIN",SPORT FR BEIN SPORTS 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/790.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FR BEIN SPORTS 2" tvg-logo="" group-title="BEIN",SPORT FR BEIN SPORTS 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/791.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FR BEIN SPORTS 3" tvg-logo="" group-title="BEIN",SPORT FR BEIN SPORTS 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/792.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US BEIN SPORTS" tvg-logo="" group-title="BEIN",SPORT US BEIN SPORTS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/818.ts
+#EXTINF:-1 tvg-id="" tvg-name="ARB ON TIME SPORTS 1" tvg-logo="" group-title="其他体育",ARB ON TIME SPORTS 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/20989.ts
+#EXTINF:-1 tvg-id="" tvg-name="ARB ON TIME SPORTS 2" tvg-logo="" group-title="其他体育",ARB ON TIME SPORTS 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/20990.ts
+#EXTINF:-1 tvg-id="" tvg-name="ARENA SPORT 1X2 ᴴᴰ" tvg-logo="" group-title="其他体育",ARENA SPORT 1X2 ᴴᴰ
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/55576.ts
+#EXTINF:-1 tvg-id="" tvg-name="AT S SPORT AUSTRIA 1" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sky-sport-austria-1-de-at.png" group-title="其他体育",AT S SPORT AUSTRIA 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/29047.ts
+#EXTINF:-1 tvg-id="" tvg-name="BG MAX SPORT 1" tvg-logo="" group-title="其他体育",BG MAX SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/4967.ts
+#EXTINF:-1 tvg-id="" tvg-name="BG MAX SPORT 2" tvg-logo="" group-title="其他体育",BG MAX SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/4968.ts
+#EXTINF:-1 tvg-id="" tvg-name="BG MAX SPORT 3" tvg-logo="" group-title="其他体育",BG MAX SPORT 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/21530.ts
+#EXTINF:-1 tvg-id="" tvg-name="BG MAX SPORT 4" tvg-logo="" group-title="其他体育",BG MAX SPORT 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/21531.ts
+#EXTINF:-1 tvg-id="" tvg-name="DE S KY SPORT MIX" tvg-logo="" group-title="其他体育",DE S KY SPORT MIX
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/49818.ts
+#EXTINF:-1 tvg-id="" tvg-name="DE S Y SPORT F1" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sky-sport-f1-de.png" group-title="其他体育",DE S Y SPORT F1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/49817.ts
+#EXTINF:-1 tvg-id="" tvg-name="DE S Y SPORT TENNIS" tvg-logo="" group-title="其他体育",DE S Y SPORT TENNIS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/49819.ts
+#EXTINF:-1 tvg-id="" tvg-name="EX YU NOVA SPORT" tvg-logo="" group-title="其他体育",EX YU NOVA SPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36529.ts
+#EXTINF:-1 tvg-id="" tvg-name="EX YU SPORT KLUB 1 HR" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport_klub_rs_1.png" group-title="其他体育",EX YU SPORT KLUB 1 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36530.ts
+#EXTINF:-1 tvg-id="sportklub1.rs" tvg-name="EX YU SPORT KLUB 1 SR" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport_klub_rs_1.png" group-title="其他体育",EX YU SPORT KLUB 1 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36527.ts
+#EXTINF:-1 tvg-id="" tvg-name="EX YU SPORT KLUB 2 HR" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport_klub_rs_2.png" group-title="其他体育",EX YU SPORT KLUB 2 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36531.ts
+#EXTINF:-1 tvg-id="sportklub2.rs" tvg-name="EX YU SPORT KLUB 2 SR" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport_klub_rs_2.png" group-title="其他体育",EX YU SPORT KLUB 2 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36528.ts
+#EXTINF:-1 tvg-id="" tvg-name="EX YU SPORT KLUB 3 HR" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport_klub_rs_3.png" group-title="其他体育",EX YU SPORT KLUB 3 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36532.ts
+#EXTINF:-1 tvg-id="" tvg-name="IT RAI SPORT 2" tvg-logo="" group-title="其他体育",IT RAI SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1485.ts
+#EXTINF:-1 tvg-id="" tvg-name="IT S SPORT ARENA" tvg-logo="" group-title="其他体育",IT S SPORT ARENA
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/2315.ts
+#EXTINF:-1 tvg-id="" tvg-name="IT S SPORT MAX" tvg-logo="" group-title="其他体育",IT S SPORT MAX
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/2317.ts
+#EXTINF:-1 tvg-id="" tvg-name="PL POLSAT SPORT" tvg-logo="" group-title="其他体育",PL POLSAT SPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/39774.ts
+#EXTINF:-1 tvg-id="" tvg-name="PL POLSAT SPORT FIGHT" tvg-logo="" group-title="其他体育",PL POLSAT SPORT FIGHT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/39775.ts
+#EXTINF:-1 tvg-id="" tvg-name="PL POLSAT SPORT NEWS" tvg-logo="" group-title="其他体育",PL POLSAT SPORT NEWS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/39776.ts
+#EXTINF:-1 tvg-id="" tvg-name="PL POLSAT SPORT PREMIUM 1 SUPER" tvg-logo="" group-title="其他体育",PL POLSAT SPORT PREMIUM 1 SUPER
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/39778.ts
+#EXTINF:-1 tvg-id="" tvg-name="PL POLSAT SPORT PREMIUM 2" tvg-logo="" group-title="其他体育",PL POLSAT SPORT PREMIUM 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/39779.ts
+#EXTINF:-1 tvg-id="" tvg-name="PL POLSAT SPORT PREMIUM 3" tvg-logo="" group-title="其他体育",PL POLSAT SPORT PREMIUM 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/39780.ts
+#EXTINF:-1 tvg-id="" tvg-name="PL POLSAT SPORT PREMIUM 4" tvg-logo="" group-title="其他体育",PL POLSAT SPORT PREMIUM 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/39781.ts
+#EXTINF:-1 tvg-id="" tvg-name="PL POLSAT SPORT PREMIUM 5" tvg-logo="" group-title="其他体育",PL POLSAT SPORT PREMIUM 5
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/39782.ts
+#EXTINF:-1 tvg-id="" tvg-name="PL POLSAT SPORT PREMIUM 6" tvg-logo="" group-title="其他体育",PL POLSAT SPORT PREMIUM 6
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/39783.ts
+#EXTINF:-1 tvg-id="" tvg-name="PT ELEVEN SPORTS 1" tvg-logo="" group-title="其他体育",PT ELEVEN SPORTS 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1468.ts
+#EXTINF:-1 tvg-id="" tvg-name="PT ELEVEN SPORTS 2" tvg-logo="" group-title="其他体育",PT ELEVEN SPORTS 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1469.ts
+#EXTINF:-1 tvg-id="" tvg-name="PT ELEVEN SPORTS 3" tvg-logo="" group-title="其他体育",PT ELEVEN SPORTS 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1470.ts
+#EXTINF:-1 tvg-id="" tvg-name="PT ELEVEN SPORTS 4" tvg-logo="" group-title="其他体育",PT ELEVEN SPORTS 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1471.ts
+#EXTINF:-1 tvg-id="" tvg-name="PT ELEVEN SPORTS 5" tvg-logo="" group-title="其他体育",PT ELEVEN SPORTS 5
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1472.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO DIGI SPORT 1" tvg-logo="" group-title="其他体育",RO DIGI SPORT 1
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42751.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO DIGI SPORT 1" tvg-logo="" group-title="其他体育",RO DIGI SPORT 1
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42752.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO DIGI SPORT 2" tvg-logo="" group-title="其他体育",RO DIGI SPORT 2
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42754.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO DIGI SPORT 2" tvg-logo="" group-title="其他体育",RO DIGI SPORT 2
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42755.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO DIGI SPORT 3" tvg-logo="" group-title="其他体育",RO DIGI SPORT 3
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42757.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO DIGI SPORT 3" tvg-logo="" group-title="其他体育",RO DIGI SPORT 3
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42758.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO DIGI SPORT 4" tvg-logo="" group-title="其他体育",RO DIGI SPORT 4
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42760.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO DIGI SPORT 4" tvg-logo="" group-title="其他体育",RO DIGI SPORT 4
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42761.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO DIGISPORT 1" tvg-logo="" group-title="其他体育",RO DIGISPORT 1
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42749.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO EUROSPORT" tvg-logo="" group-title="其他体育",RO EUROSPORT
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42775.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO EUROSPORT 1" tvg-logo="" group-title="其他体育",RO EUROSPORT 1
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42777.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO EUROSPORT 2" tvg-logo="" group-title="其他体育",RO EUROSPORT 2
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42778.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO PRIMA SPORT 1" tvg-logo="" group-title="其他体育",RO PRIMA SPORT 1
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42782.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO PRIMA SPORT 1" tvg-logo="" group-title="其他体育",RO PRIMA SPORT 1
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42783.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO PRIMA SPORT 2" tvg-logo="" group-title="其他体育",RO PRIMA SPORT 2
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42785.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO PRIMA SPORT 2" tvg-logo="" group-title="其他体育",RO PRIMA SPORT 2
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42786.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO PRIMA SPORT 3" tvg-logo="" group-title="其他体育",RO PRIMA SPORT 3
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42787.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO PRIMA SPORT 3" tvg-logo="" group-title="其他体育",RO PRIMA SPORT 3
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42788.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO PRIMA SPORT 3" tvg-logo="" group-title="其他体育",RO PRIMA SPORT 3
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42789.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO PRIMA SPORT 4" tvg-logo="" group-title="其他体育",RO PRIMA SPORT 4
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42791.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO PRIMA SPORT 4" tvg-logo="" group-title="其他体育",RO PRIMA SPORT 4
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42792.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO PRIMA SPORT 5" tvg-logo="" group-title="其他体育",RO PRIMA SPORT 5
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42794.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO PRIMA SPORT 5" tvg-logo="" group-title="其他体育",RO PRIMA SPORT 5
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/42795.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO TELEKOM SPORT 1" tvg-logo="" group-title="其他体育",RO TELEKOM SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1733.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO TELEKOM SPORT 2" tvg-logo="" group-title="其他体育",RO TELEKOM SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1734.ts
+#EXTINF:-1 tvg-id="" tvg-name="RO TELEKOM SPORT 3" tvg-logo="" group-title="其他体育",RO TELEKOM SPORT 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1735.ts
+#EXTINF:-1 tvg-id="" tvg-name="SLO SPORT KLUB 1" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport_klub_rs_1.png" group-title="其他体育",SLO SPORT KLUB 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36521.ts
+#EXTINF:-1 tvg-id="" tvg-name="SLO SPORT TV 1" tvg-logo="" group-title="其他体育",SLO SPORT TV 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36172.ts
+#EXTINF:-1 tvg-id="" tvg-name="SLO SPORT TV 2" tvg-logo="" group-title="其他体育",SLO SPORT TV 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36173.ts
+#EXTINF:-1 tvg-id="" tvg-name="SLO SPORT TV 3" tvg-logo="" group-title="其他体育",SLO SPORT TV 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36174.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AL K SPORT 1" tvg-logo="" group-title="其他体育",SPORT AL K SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/878.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AL K SPORT 2" tvg-logo="" group-title="其他体育",SPORT AL K SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/879.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AL K SPORT 3" tvg-logo="" group-title="其他体育",SPORT AL K SPORT 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/880.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AL K SPORT 4" tvg-logo="" group-title="其他体育",SPORT AL K SPORT 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/881.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AL SUPER SPORT 1" tvg-logo="" group-title="其他体育",SPORT AL SUPER SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/874.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AL SUPER SPORT 2" tvg-logo="" group-title="其他体育",SPORT AL SUPER SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/875.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AL SUPER SPORT 3" tvg-logo="" group-title="其他体育",SPORT AL SUPER SPORT 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/876.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AL SUPER SPORT 4" tvg-logo="" group-title="其他体育",SPORT AL SUPER SPORT 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/877.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AL TRING SPORT 1" tvg-logo="" group-title="其他体育",SPORT AL TRING SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/870.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AL TRING SPORT 2" tvg-logo="" group-title="其他体育",SPORT AL TRING SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/871.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AL TRING SPORT 3" tvg-logo="" group-title="其他体育",SPORT AL TRING SPORT 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/872.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AL TRING SPORT NEWS" tvg-logo="" group-title="其他体育",SPORT AL TRING SPORT NEWS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/873.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR OSN AD SPORT 1" tvg-logo="" group-title="其他体育",SPORT AR OSN AD SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/912.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR OSN AD SPORT 2" tvg-logo="" group-title="其他体育",SPORT AR OSN AD SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/913.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR OSN AD SPORT 3" tvg-logo="" group-title="其他体育",SPORT AR OSN AD SPORT 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/914.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AR OSN AD SPORT 4" tvg-logo="" group-title="其他体育",SPORT AR OSN AD SPORT 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/915.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT ARENA SPORT PREMIUM 1" tvg-logo="" group-title="其他体育",SPORT ARENA SPORT PREMIUM 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/49158.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT ARENA SPORT PREMIUM 2" tvg-logo="" group-title="其他体育",SPORT ARENA SPORT PREMIUM 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/49159.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT ARENA SPORT PREMIUM 3" tvg-logo="" group-title="其他体育",SPORT ARENA SPORT PREMIUM 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/49160.ts
+#EXTINF:-1 tvg-id="Arenasport 1.hr" tvg-name="SPORT ARENASPORT 1 HR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-1-rs.png" group-title="其他体育",SPORT ARENASPORT 1 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/699.ts
+#EXTINF:-1 tvg-id="Arenasport 1 HD.hr" tvg-name="SPORT ARENASPORT 1 HR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-1-rs.png" group-title="其他体育",SPORT ARENASPORT 1 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/29070.ts
+#EXTINF:-1 tvg-id="Arena Sport 1.rs" tvg-name="SPORT ARENASPORT 1 SR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-1-rs.png" group-title="其他体育",SPORT ARENASPORT 1 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/705.ts
+#EXTINF:-1 tvg-id="Arena Sport 1.rs" tvg-name="SPORT ARENASPORT 1 SR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-1-rs.png" group-title="其他体育",SPORT ARENASPORT 1 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/29066.ts
+#EXTINF:-1 tvg-id="Arenasport 2.hr" tvg-name="SPORT ARENASPORT 2 HR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-2-rs.png" group-title="其他体育",SPORT ARENASPORT 2 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/700.ts
+#EXTINF:-1 tvg-id="Arenasport 2 HD.hr" tvg-name="SPORT ARENASPORT 2 HR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-2-rs.png" group-title="其他体育",SPORT ARENASPORT 2 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/29071.ts
+#EXTINF:-1 tvg-id="Arena Sport 2.rs" tvg-name="SPORT ARENASPORT 2 SR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-2-rs.png" group-title="其他体育",SPORT ARENASPORT 2 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/706.ts
+#EXTINF:-1 tvg-id="Arena Sport 2.rs" tvg-name="SPORT ARENASPORT 2 SR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-2-rs.png" group-title="其他体育",SPORT ARENASPORT 2 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/29067.ts
+#EXTINF:-1 tvg-id="Arenasport 3.hr" tvg-name="SPORT ARENASPORT 3 HR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-3-rs.png" group-title="其他体育",SPORT ARENASPORT 3 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/701.ts
+#EXTINF:-1 tvg-id="Arenasport 3 HD.hr" tvg-name="SPORT ARENASPORT 3 HR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-3-rs.png" group-title="其他体育",SPORT ARENASPORT 3 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/29072.ts
+#EXTINF:-1 tvg-id="Arena Sport 3.rs" tvg-name="SPORT ARENASPORT 3 SR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-3-rs.png" group-title="其他体育",SPORT ARENASPORT 3 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/707.ts
+#EXTINF:-1 tvg-id="Arena Sport 3.rs" tvg-name="SPORT ARENASPORT 3 SR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-3-rs.png" group-title="其他体育",SPORT ARENASPORT 3 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/29068.ts
+#EXTINF:-1 tvg-id="Arenasport 4.hr" tvg-name="SPORT ARENASPORT 4 HR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-4-rs.png" group-title="其他体育",SPORT ARENASPORT 4 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/702.ts
+#EXTINF:-1 tvg-id="Arenasport 3 HD.hr" tvg-name="SPORT ARENASPORT 4 HR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-4-rs.png" group-title="其他体育",SPORT ARENASPORT 4 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/29073.ts
+#EXTINF:-1 tvg-id="Arena Sport 4.rs" tvg-name="SPORT ARENASPORT 4 SR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-4-rs.png" group-title="其他体育",SPORT ARENASPORT 4 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/708.ts
+#EXTINF:-1 tvg-id="Arena Sport 4.rs" tvg-name="SPORT ARENASPORT 4 SR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-4-rs.png" group-title="其他体育",SPORT ARENASPORT 4 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/29069.ts
+#EXTINF:-1 tvg-id="Arenasport 5 HD.hr" tvg-name="SPORT ARENASPORT 5 HR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-5-rs.png" group-title="其他体育",SPORT ARENASPORT 5 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/703.ts
+#EXTINF:-1 tvg-id="Arenasport 5 HD.hr" tvg-name="SPORT ARENASPORT 5 HR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-5-rs.png" group-title="其他体育",SPORT ARENASPORT 5 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/29074.ts
+#EXTINF:-1 tvg-id="Arena Sport 5.rs" tvg-name="SPORT ARENASPORT 5 SR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-5-rs.png" group-title="其他体育",SPORT ARENASPORT 5 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/709.ts
+#EXTINF:-1 tvg-id="Arena Sport 6.rs" tvg-name="SPORT ARENASPORT 6 SR" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-sport-6-rs.png" group-title="其他体育",SPORT ARENASPORT 6 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/710.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT ARENASPORT BH" tvg-logo="" group-title="其他体育",SPORT ARENASPORT BH
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/704.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT AT ORF SPORT" tvg-logo="" group-title="其他体育",SPORT AT ORF SPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/752.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT BG DIEMA SPORT 1" tvg-logo="" group-title="其他体育",SPORT BG DIEMA SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/936.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT BG DIEMA SPORT 2" tvg-logo="" group-title="其他体育",SPORT BG DIEMA SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/937.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT BG EUROSPORT 1" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/eurosport.jpg" group-title="其他体育",SPORT BG EUROSPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/934.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT BG EUROSPORT 2" tvg-logo="" group-title="其他体育",SPORT BG EUROSPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/935.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT BG NOVA SPORT" tvg-logo="" group-title="其他体育",SPORT BG NOVA SPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/938.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT BG RING TV" tvg-logo="" group-title="其他体育",SPORT BG RING TV
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/940.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT BG SPORT" tvg-logo="" group-title="其他体育",SPORT BG SPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/941.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE AUTO MOTOR SPORT" tvg-logo="" group-title="其他体育",SPORT DE AUTO MOTOR SPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/749.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE DAZN BAR 1" tvg-logo="https://www.lyngsat.com/logo/tv/dd/dazn-1-uk.svg" group-title="其他体育",SPORT DE DAZN BAR 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/728.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE DAZN BAR 2" tvg-logo="https://www.lyngsat.com/logo/tv/dd/dazn-2-uk.svg" group-title="其他体育",SPORT DE DAZN BAR 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/729.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE EUROSPORT 1" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/eurosport.jpg" group-title="其他体育",SPORT DE EUROSPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/725.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE EUROSPORT 2" tvg-logo="" group-title="其他体育",SPORT DE EUROSPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/726.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE EUROSPORT 2 XTRA" tvg-logo="" group-title="其他体育",SPORT DE EUROSPORT 2 XTRA
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/727.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE FC BAYERN TV" tvg-logo="" group-title="其他体育",SPORT DE FC BAYERN TV
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/750.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE MOTORVISION" tvg-logo="" group-title="其他体育",SPORT DE MOTORVISION
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/857.ts
+#EXTINF:-1 tvg-id="Sky Sport Bundesliga 1 HD.de" tvg-name="SPORT DE S BUNDESLIGA 1" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sky-sport-bundesliga-de.png" group-title="其他体育",SPORT DE S BUNDESLIGA 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/731.ts
+#EXTINF:-1 tvg-id="Sky Sport Bundesliga 2 HD.de" tvg-name="SPORT DE S BUNDESLIGA 2" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sky-sport-bundesliga-de.png" group-title="其他体育",SPORT DE S BUNDESLIGA 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/732.ts
+#EXTINF:-1 tvg-id="Sky Sport Bundesliga 2 HD.de" tvg-name="SPORT DE S BUNDESLIGA 2" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sky-sport-bundesliga-de.png" group-title="其他体育",SPORT DE S BUNDESLIGA 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/744.ts
+#EXTINF:-1 tvg-id="Sky Sport Bundesliga 3 HD.de" tvg-name="SPORT DE S BUNDESLIGA 3" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sky-sport-bundesliga-de.png" group-title="其他体育",SPORT DE S BUNDESLIGA 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/733.ts
+#EXTINF:-1 tvg-id="Sky Sport Bundesliga 4 HD.de" tvg-name="SPORT DE S BUNDESLIGA 4" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sky-sport-bundesliga-de.png" group-title="其他体育",SPORT DE S BUNDESLIGA 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/734.ts
+#EXTINF:-1 tvg-id="Sky Sport Bundesliga 5 HD.de" tvg-name="SPORT DE S BUNDESLIGA 5" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sky-sport-bundesliga-de.png" group-title="其他体育",SPORT DE S BUNDESLIGA 5
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/735.ts
+#EXTINF:-1 tvg-id="Sky Sport Bundesliga 6 HD.de" tvg-name="SPORT DE S BUNDESLIGA 6" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sky-sport-bundesliga-de.png" group-title="其他体育",SPORT DE S BUNDESLIGA 6
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/736.ts
+#EXTINF:-1 tvg-id="Sky Sport Bundesliga 1 HD.de" tvg-name="SPORT DE S KY SPORT BUNDESLIGA 1" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sky-sport-bundesliga-de.png" group-title="其他体育",SPORT DE S KY SPORT BUNDESLIGA 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/745.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE S SPORT 1" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport1_de_plus.png" group-title="其他体育",SPORT DE S SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/737.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE S SPORT 1" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport1_de_plus.png" group-title="其他体育",SPORT DE S SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/747.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE S SPORT 2" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/sky_it_sport2.jpg" group-title="其他体育",SPORT DE S SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/738.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE S SPORT 2" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/sky_it_sport2.jpg" group-title="其他体育",SPORT DE S SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/746.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE S SPORT 3" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/sky_it_sport3.jpg" group-title="其他体育",SPORT DE S SPORT 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/739.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE S SPORT 4" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/sky_de_sport_04.jpg" group-title="其他体育",SPORT DE S SPORT 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/740.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE S SPORT 5" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/sky_de_sport_05.jpg" group-title="其他体育",SPORT DE S SPORT 5
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/741.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE S SPORT 6" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/sky_de_sport_06.jpg" group-title="其他体育",SPORT DE S SPORT 6
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/742.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE S SPORT 7" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/sky_de_sport_07.jpg" group-title="其他体育",SPORT DE S SPORT 7
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/743.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE S SPORT NEWS" tvg-logo="https://w7.pngwing.com/pngs/514/778/png-transparent-logo-sky-news-live-television-brand-television-channel-design-television-text-rectangle-thumbnail.png" group-title="其他体育",SPORT DE S SPORT NEWS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/730.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE S SPORTS AUSTRIA" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sky-sport-austria-1-de-at.png" group-title="其他体育",SPORT DE S SPORTS AUSTRIA
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/751.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE SPORT 1" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/sport1_de_plus.jpg" group-title="其他体育",SPORT DE SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/748.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT DE SPORT DIGITAL" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sportdigital-fussball-de.png" group-title="其他体育",SPORT DE SPORT DIGITAL
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/924.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT ES BARCA TV" tvg-logo="" group-title="其他体育",SPORT ES BARCA TV
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/943.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT ES EUROSPORT 1" tvg-logo="" group-title="其他体育",SPORT ES EUROSPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/942.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT ES GOL TV" tvg-logo="" group-title="其他体育",SPORT ES GOL TV
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/952.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT ES M GOLF" tvg-logo="" group-title="其他体育",SPORT ES M GOLF
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/949.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT ES REAL MADRID TV" tvg-logo="" group-title="其他体育",SPORT ES REAL MADRID TV
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/944.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT EX YU ARENA PREMIUM 1" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-premium-1-rs.png" group-title="其他体育",SPORT EX YU ARENA PREMIUM 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/40635.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT EX YU ARENA PREMIUM 2" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-premium-2-rs.png" group-title="其他体育",SPORT EX YU ARENA PREMIUM 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/40636.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT EX YU ARENA PREMIUM 3" tvg-logo="https://www.lyngsat.com/logo/tv/aa/arena-premium-3-rs.png" group-title="其他体育",SPORT EX YU ARENA PREMIUM 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/40637.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT EX YU EUROSPORT 1" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/eurosport.jpg" group-title="其他体育",SPORT EX YU EUROSPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/723.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT EX YU EUROSPORT 2" tvg-logo="" group-title="其他体育",SPORT EX YU EUROSPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/724.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT EX YU FIGHTCLUB" tvg-logo="" group-title="其他体育",SPORT EX YU FIGHTCLUB
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/933.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT EX YU MAX SPORT 1" tvg-logo="https://www.lyngsat.com/logo/tv/mm/max-sport-1-hr.png" group-title="其他体育",SPORT EX YU MAX SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/41332.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT EX YU MAX SPORT 2" tvg-logo="https://www.lyngsat.com/logo/tv/mm/max-sport-2-hr.png" group-title="其他体育",SPORT EX YU MAX SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/41333.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT EX YU SPORT KLUB ESPORT" tvg-logo="" group-title="其他体育",SPORT EX YU SPORT KLUB ESPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/48038.ts
+#EXTINF:-1 tvg-id="fightchannel.rs" tvg-name="SPORT EX YU SPORT KLUB FIGHT" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport-klub-fight-hu-rs.png" group-title="其他体育",SPORT EX YU SPORT KLUB FIGHT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/48037.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT EX YU SPORTSKA TV" tvg-logo="" group-title="其他体育",SPORT EX YU SPORTSKA TV
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/884.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FIGHT CHANNEL" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/fight_channel.jpg" group-title="其他体育",SPORT FIGHT CHANNEL
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/931.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FIGHT NETWORK" tvg-logo="" group-title="其他体育",SPORT FIGHT NETWORK
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/859.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FIGHTBOX" tvg-logo="" group-title="其他体育",SPORT FIGHTBOX
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/856.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FR CANAL SPORT" tvg-logo="" group-title="其他体育",SPORT FR CANAL SPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/793.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FR EUROSPORT 1" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/eurosport.jpg" group-title="其他体育",SPORT FR EUROSPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/794.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FR EUROSPORT 2" tvg-logo="" group-title="其他体育",SPORT FR EUROSPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/795.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FR GOLF" tvg-logo="" group-title="其他体育",SPORT FR GOLF
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/796.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FR INFOSPORT" tvg-logo="" group-title="其他体育",SPORT FR INFOSPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/797.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FR RMC SPORT 1" tvg-logo="" group-title="其他体育",SPORT FR RMC SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/798.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FR RMC SPORT 2" tvg-logo="" group-title="其他体育",SPORT FR RMC SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/799.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FR RMC SPORT 3" tvg-logo="" group-title="其他体育",SPORT FR RMC SPORT 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/800.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FR RMC SPORT 4" tvg-logo="" group-title="其他体育",SPORT FR RMC SPORT 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/801.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT FR RMC SPORT NEWS" tvg-logo="" group-title="其他体育",SPORT FR RMC SPORT NEWS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/802.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT IT AUTO MOTO TV" tvg-logo="" group-title="其他体育",SPORT IT AUTO MOTO TV
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1489.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT IT EUROSPORT 1" tvg-logo="" group-title="其他体育",SPORT IT EUROSPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1478.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT IT EUROSPORT 2" tvg-logo="" group-title="其他体育",SPORT IT EUROSPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1479.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT IT PREMIUM SPORT" tvg-logo="" group-title="其他体育",SPORT IT PREMIUM SPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1480.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT IT RAI SPORT 1" tvg-logo="" group-title="其他体育",SPORT IT RAI SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1484.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT IT S SPORT 2" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/sky_it_sport2.jpg" group-title="其他体育",SPORT IT S SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1487.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT IT S SPORT 24" tvg-logo="" group-title="其他体育",SPORT IT S SPORT 24
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1475.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT IT S SPORT F1" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sky-sport-f1-de.png" group-title="其他体育",SPORT IT S SPORT F1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1477.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT IT S SPORT MOTO GP" tvg-logo="" group-title="其他体育",SPORT IT S SPORT MOTO GP
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1483.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT IT S SPORT UNO" tvg-logo="" group-title="其他体育",SPORT IT S SPORT UNO
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1486.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT IT SPORT ITALIA" tvg-logo="" group-title="其他体育",SPORT IT SPORT ITALIA
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1473.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT IT SUPER TENNIS" tvg-logo="" group-title="其他体育",SPORT IT SUPER TENNIS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/1474.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT KOMBAT SPORT" tvg-logo="" group-title="其他体育",SPORT KOMBAT SPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/788.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT NL EUROSPORT 1" tvg-logo="" group-title="其他体育",SPORT NL EUROSPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/911.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT NL EUROSPORT 2" tvg-logo="" group-title="其他体育",SPORT NL EUROSPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/39155.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT NL FOX SPORTS 1" tvg-logo="https://w7.pngwing.com/pngs/30/870/png-transparent-fox-sports-networks-television-channel-fox-broadcasting-company-sports-logos-television-blue-text-thumbnail.png" group-title="其他体育",SPORT NL FOX SPORTS 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/900.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT NL FOX SPORTS 2" tvg-logo="https://w7.pngwing.com/pngs/30/870/png-transparent-fox-sports-networks-television-channel-fox-broadcasting-company-sports-logos-television-blue-text-thumbnail.png" group-title="其他体育",SPORT NL FOX SPORTS 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/901.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT NL FOX SPORTS 3" tvg-logo="https://w7.pngwing.com/pngs/30/870/png-transparent-fox-sports-networks-television-channel-fox-broadcasting-company-sports-logos-television-blue-text-thumbnail.png" group-title="其他体育",SPORT NL FOX SPORTS 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/902.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT NL FOX SPORTS 4" tvg-logo="https://w7.pngwing.com/pngs/30/870/png-transparent-fox-sports-networks-television-channel-fox-broadcasting-company-sports-logos-television-blue-text-thumbnail.png" group-title="其他体育",SPORT NL FOX SPORTS 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/903.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT NL ZIGGO SPORT" tvg-logo="" group-title="其他体育",SPORT NL ZIGGO SPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/906.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT NL ZIGGO SPORT 2" tvg-logo="" group-title="其他体育",SPORT NL ZIGGO SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/905.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT NL ZIGGO SPORT 3" tvg-logo="" group-title="其他体育",SPORT NL ZIGGO SPORT 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/908.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT NL ZIGGO SPORT 4" tvg-logo="" group-title="其他体育",SPORT NL ZIGGO SPORT 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/907.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT NL ZIGGO SPORT 5" tvg-logo="" group-title="其他体育",SPORT NL ZIGGO SPORT 5
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/910.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT NL ZIGGO SPORT 6" tvg-logo="" group-title="其他体育",SPORT NL ZIGGO SPORT 6
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/909.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT NOVA" tvg-logo="" group-title="其他体育",SPORT NOVA
+http://kaantv.site:8000/live/kaan21084/rgdt4f581r8fd4d45e/30079.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT PL CANAL SPORT 3" tvg-logo="" group-title="其他体育",SPORT PL CANAL SPORT 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/928.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT PL ELEVEN SPORTS 2" tvg-logo="" group-title="其他体育",SPORT PL ELEVEN SPORTS 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/929.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT PL ELEVEN SPORTS 4" tvg-logo="" group-title="其他体育",SPORT PL ELEVEN SPORTS 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/927.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT PL POLSAT SPORT EXTRA" tvg-logo="" group-title="其他体育",SPORT PL POLSAT SPORT EXTRA
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/926.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT PL TVP SPORT" tvg-logo="" group-title="其他体育",SPORT PL TVP SPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/932.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT PT SPORT TV 1" tvg-logo="" group-title="其他体育",SPORT PT SPORT TV 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/917.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT PT SPORT TV 2" tvg-logo="" group-title="其他体育",SPORT PT SPORT TV 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/918.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT PT SPORT TV 3" tvg-logo="" group-title="其他体育",SPORT PT SPORT TV 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/919.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT PT SPORT TV 4" tvg-logo="" group-title="其他体育",SPORT PT SPORT TV 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/920.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT PT SPORT TV 5" tvg-logo="" group-title="其他体育",SPORT PT SPORT TV 5
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/921.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT PT SPORT TV NBA" tvg-logo="" group-title="其他体育",SPORT PT SPORT TV NBA
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/861.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT PT SPORTING TV" tvg-logo="" group-title="其他体育",SPORT PT SPORTING TV
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/916.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT RO DIGI SPORT 1" tvg-logo="" group-title="其他体育",SPORT RO DIGI SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/955.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT RO DIGI SPORT 2" tvg-logo="" group-title="其他体育",SPORT RO DIGI SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/956.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT RO DIGI SPORT 3" tvg-logo="" group-title="其他体育",SPORT RO DIGI SPORT 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/957.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT RO DIGI SPORT 4" tvg-logo="" group-title="其他体育",SPORT RO DIGI SPORT 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/958.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT RO EUROSPORT 1" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/eurosport.jpg" group-title="其他体育",SPORT RO EUROSPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/922.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT SPORT KLUB 1 HR" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport_klub_rs_1.png" group-title="其他体育",SPORT SPORT KLUB 1 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/718.ts
+#EXTINF:-1 tvg-id="sportklub1.rs" tvg-name="SPORT SPORT KLUB 1 SR" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport_klub_rs_1.png" group-title="其他体育",SPORT SPORT KLUB 1 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/711.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT SPORT KLUB 2 HR" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport_klub_rs_2.png" group-title="其他体育",SPORT SPORT KLUB 2 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/719.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT SPORT KLUB 2 SR" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport_klub_rs_2.png" group-title="其他体育",SPORT SPORT KLUB 2 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/712.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT SPORT KLUB 3 HR" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport_klub_rs_3.png" group-title="其他体育",SPORT SPORT KLUB 3 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/720.ts
+#EXTINF:-1 tvg-id="sportklub3.rs" tvg-name="SPORT SPORT KLUB 3 SR" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport_klub_rs_3.png" group-title="其他体育",SPORT SPORT KLUB 3 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/713.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT SPORT KLUB 4 HR" tvg-logo="" group-title="其他体育",SPORT SPORT KLUB 4 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/721.ts
+#EXTINF:-1 tvg-id="sportklub4.rs" tvg-name="SPORT SPORT KLUB 4 SR" tvg-logo="" group-title="其他体育",SPORT SPORT KLUB 4 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/714.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT SPORT KLUB 5 HR" tvg-logo="" group-title="其他体育",SPORT SPORT KLUB 5 HR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/722.ts
+#EXTINF:-1 tvg-id="sportklub5.rs" tvg-name="SPORT SPORT KLUB 5 SR" tvg-logo="" group-title="其他体育",SPORT SPORT KLUB 5 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/715.ts
+#EXTINF:-1 tvg-id="sportklub6.rs" tvg-name="SPORT SPORT KLUB 6 SR" tvg-logo="" group-title="其他体育",SPORT SPORT KLUB 6 SR
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/716.ts
+#EXTINF:-1 tvg-id="sportgolf.rs" tvg-name="SPORT SPORT KLUB GOLF" tvg-logo="https://www.lyngsat.com/logo/tv/ss/sport_klub_rs_golf.png" group-title="其他体育",SPORT SPORT KLUB GOLF
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/717.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK AT THE RACES" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/at_the_races_ie.jpg" group-title="其他体育",SPORT UK AT THE RACES
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/862.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK BOXNATION" tvg-logo="" group-title="其他体育",SPORT UK BOXNATION
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/855.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK DUBAI RACING" tvg-logo="" group-title="其他体育",SPORT UK DUBAI RACING
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/863.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK DUBAI SPORTS" tvg-logo="" group-title="其他体育",SPORT UK DUBAI SPORTS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/864.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK DUBAI SPORTS 3" tvg-logo="" group-title="其他体育",SPORT UK DUBAI SPORTS 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/865.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK EUROSPORT 1" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/eurosport.jpg" group-title="其他体育",SPORT UK EUROSPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/768.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK EUROSPORT 2" tvg-logo="" group-title="其他体育",SPORT UK EUROSPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/769.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK FC LIVERPOOL TV" tvg-logo="" group-title="其他体育",SPORT UK FC LIVERPOOL TV
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/774.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK FC MANCHESTER UNITED" tvg-logo="" group-title="其他体育",SPORT UK FC MANCHESTER UNITED
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/775.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK FIGHT CHANNEL WORLD" tvg-logo="" group-title="其他体育",SPORT UK FIGHT CHANNEL WORLD
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/858.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK FOX SPORTS NEWS" tvg-logo="https://w7.pngwing.com/pngs/30/870/png-transparent-fox-sports-networks-television-channel-fox-broadcasting-company-sports-logos-television-blue-text-thumbnail.png" group-title="其他体育",SPORT UK FOX SPORTS NEWS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/950.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK MOTOR TREND" tvg-logo="" group-title="其他体育",SPORT UK MOTOR TREND
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/953.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK MOTORSPORT TV" tvg-logo="" group-title="其他体育",SPORT UK MOTORSPORT TV
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/868.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK PREMIER SPORTS" tvg-logo="" group-title="其他体育",SPORT UK PREMIER SPORTS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/772.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK RACING UK" tvg-logo="" group-title="其他体育",SPORT UK RACING UK
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/866.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK S SPORTS CRICKET" tvg-logo="" group-title="其他体育",SPORT UK S SPORTS CRICKET
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/759.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK S SPORTS F1" tvg-logo="" group-title="其他体育",SPORT UK S SPORTS F1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/761.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK S SPORTS FOOTBALL" tvg-logo="" group-title="其他体育",SPORT UK S SPORTS FOOTBALL
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/753.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK S SPORTS GOLF" tvg-logo="" group-title="其他体育",SPORT UK S SPORTS GOLF
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/760.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK S SPORTS MAIN EVENT" tvg-logo="" group-title="其他体育",SPORT UK S SPORTS MAIN EVENT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/755.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK S SPORTS MIX" tvg-logo="" group-title="其他体育",SPORT UK S SPORTS MIX
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/758.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK S SPORTS NEWS" tvg-logo="https://w7.pngwing.com/pngs/514/778/png-transparent-logo-sky-news-live-television-brand-television-channel-design-television-text-rectangle-thumbnail.png" group-title="其他体育",SPORT UK S SPORTS NEWS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/762.ts
+#EXTINF:-1 tvg-id="88039" tvg-name="SPORT UK TNT SPORT 1" tvg-logo="" group-title="其他体育",SPORT UK TNT SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/764.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT UK UFC FIGHT PASS" tvg-logo="" group-title="其他体育",SPORT UK UFC FIGHT PASS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/860.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US AFN SPORT" tvg-logo="" group-title="其他体育",SPORT US AFN SPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/819.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US BTN SPORTS" tvg-logo="" group-title="其他体育",SPORT US BTN SPORTS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/885.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US CBS SPORTS" tvg-logo="" group-title="其他体育",SPORT US CBS SPORTS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/831.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US ESPN 1" tvg-logo="" group-title="其他体育",SPORT US ESPN 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/960.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US ESPN 2" tvg-logo="" group-title="其他体育",SPORT US ESPN 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/824.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US ESPN NEWS" tvg-logo="" group-title="其他体育",SPORT US ESPN NEWS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/823.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US ESPN U" tvg-logo="" group-title="其他体育",SPORT US ESPN U
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/961.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US FOX SOCCER" tvg-logo="" group-title="其他体育",SPORT US FOX SOCCER
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/822.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US FOX SPORT 1" tvg-logo="https://w7.pngwing.com/pngs/30/870/png-transparent-fox-sports-networks-television-channel-fox-broadcasting-company-sports-logos-television-blue-text-thumbnail.png" group-title="其他体育",SPORT US FOX SPORT 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/820.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US FOX SPORT 2" tvg-logo="https://w7.pngwing.com/pngs/30/870/png-transparent-fox-sports-networks-television-channel-fox-broadcasting-company-sports-logos-television-blue-text-thumbnail.png" group-title="其他体育",SPORT US FOX SPORT 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/821.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US MLB NETWORK" tvg-logo="" group-title="其他体育",SPORT US MLB NETWORK
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/847.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US NBA" tvg-logo="" group-title="其他体育",SPORT US NBA
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/826.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US NBC GOLF" tvg-logo="" group-title="其他体育",SPORT US NBC GOLF
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/842.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US NBC SPORTS CHICAGO" tvg-logo="" group-title="其他体育",SPORT US NBC SPORTS CHICAGO
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/888.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US NBC SPORTS NETWORK" tvg-logo="" group-title="其他体育",SPORT US NBC SPORTS NETWORK
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/867.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US NFL" tvg-logo="" group-title="其他体育",SPORT US NFL
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/827.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US NFL NETWORK" tvg-logo="" group-title="其他体育",SPORT US NFL NETWORK
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/829.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US NFL RED ZONE" tvg-logo="" group-title="其他体育",SPORT US NFL RED ZONE
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/830.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US OWN" tvg-logo="" group-title="其他体育",SPORT US OWN
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/959.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US PAC 12 BAY AREA" tvg-logo="" group-title="其他体育",SPORT US PAC 12 BAY AREA
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/838.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US PAC 12 LOS ANGELES" tvg-logo="" group-title="其他体育",SPORT US PAC 12 LOS ANGELES
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/839.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US SONY TEN SPORT 3" tvg-logo="" group-title="其他体育",SPORT US SONY TEN SPORT 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/894.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US SPORTSNET ONE" tvg-logo="" group-title="其他体育",SPORT US SPORTSNET ONE
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/849.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US SPORTSNET ONTARIO" tvg-logo="" group-title="其他体育",SPORT US SPORTSNET ONTARIO
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/892.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US TENNIS CHANNEL" tvg-logo="" group-title="其他体育",SPORT US TENNIS CHANNEL
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/853.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US TSN 1" tvg-logo="" group-title="其他体育",SPORT US TSN 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/832.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US TSN 2" tvg-logo="" group-title="其他体育",SPORT US TSN 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/833.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US TSN 3" tvg-logo="" group-title="其他体育",SPORT US TSN 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/834.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US TSN 4" tvg-logo="" group-title="其他体育",SPORT US TSN 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/835.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US TYC SPORTS" tvg-logo="" group-title="其他体育",SPORT US TYC SPORTS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/852.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US WILLOW CRICKET" tvg-logo="" group-title="其他体育",SPORT US WILLOW CRICKET
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/851.ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORT US WWE NETWORK" tvg-logo="" group-title="其他体育",SPORT US WWE NETWORK
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/854.ts
+#EXTINF:-1 tvg-id="" tvg-name="SWISS MYSPORTS" tvg-logo="" group-title="其他体育",SWISS MYSPORTS
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6709.ts
+#EXTINF:-1 tvg-id="" tvg-name="SWISS MYSPORTS 1" tvg-logo="" group-title="其他体育",SWISS MYSPORTS 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6701.ts
+#EXTINF:-1 tvg-id="" tvg-name="SWISS MYSPORTS 2" tvg-logo="" group-title="其他体育",SWISS MYSPORTS 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6702.ts
+#EXTINF:-1 tvg-id="" tvg-name="SWISS MYSPORTS 3" tvg-logo="" group-title="其他体育",SWISS MYSPORTS 3
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6703.ts
+#EXTINF:-1 tvg-id="" tvg-name="SWISS MYSPORTS 4" tvg-logo="" group-title="其他体育",SWISS MYSPORTS 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6704.ts
+#EXTINF:-1 tvg-id="" tvg-name="SWISS MYSPORTS 5" tvg-logo="" group-title="其他体育",SWISS MYSPORTS 5
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6705.ts
+#EXTINF:-1 tvg-id="" tvg-name="SWISS MYSPORTS 6" tvg-logo="" group-title="其他体育",SWISS MYSPORTS 6
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6706.ts
+#EXTINF:-1 tvg-id="" tvg-name="SWISS MYSPORTS 7" tvg-logo="" group-title="其他体育",SWISS MYSPORTS 7
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6707.ts
+#EXTINF:-1 tvg-id="" tvg-name="SWISS MYSPORTS 8" tvg-logo="" group-title="其他体育",SWISS MYSPORTS 8
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6708.ts
+#EXTINF:-1 tvg-id="" tvg-name="ZA SUPERSPORT ACTION" tvg-logo="" group-title="其他体育",ZA SUPERSPORT ACTION
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6275.ts
+#EXTINF:-1 tvg-id="" tvg-name="ZA SUPERSPORT BLITZ" tvg-logo="" group-title="其他体育",ZA SUPERSPORT BLITZ
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36179.ts
+#EXTINF:-1 tvg-id="" tvg-name="ZA SUPERSPORT CRICKET" tvg-logo="" group-title="其他体育",ZA SUPERSPORT CRICKET
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6269.ts
+#EXTINF:-1 tvg-id="" tvg-name="ZA SUPERSPORT GRANDSTAND" tvg-logo="" group-title="其他体育",ZA SUPERSPORT GRANDSTAND
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6272.ts
+#EXTINF:-1 tvg-id="" tvg-name="ZA SUPERSPORT MAXIMO 1" tvg-logo="" group-title="其他体育",ZA SUPERSPORT MAXIMO 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6274.ts
+#EXTINF:-1 tvg-id="" tvg-name="ZA SUPERSPORT MOTORSPORT" tvg-logo="" group-title="其他体育",ZA SUPERSPORT MOTORSPORT
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/6276.ts
+#EXTINF:-1 tvg-id="" tvg-name="ZA SUPERSPORT VARIETY 1" tvg-logo="" group-title="其他体育",ZA SUPERSPORT VARIETY 1
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36176.ts
+#EXTINF:-1 tvg-id="" tvg-name="ZA SUPERSPORT VARIETY 2" tvg-logo="" group-title="其他体育",ZA SUPERSPORT VARIETY 2
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36177.ts
+#EXTINF:-1 tvg-id="" tvg-name="ZA SUPERSPORT VARIETY 4" tvg-logo="" group-title="其他体育",ZA SUPERSPORT VARIETY 4
+http://localiptv.site:85/live/jozsefmulleruj/jozsefmulleruj/36178.ts
