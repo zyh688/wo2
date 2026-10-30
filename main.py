@@ -1,14 +1,17 @@
 """
 体育频道整理脚本（Xtream Codes 面板版，支持多个订阅链接）
 
-流程：读取 sources.txt 里的订阅链接 -> 逐个调用面板 API 取分类和频道
-     -> 名称白名单/黑名单过滤 -> 清洗名字 -> 合并去重 -> 分组排序 -> 输出 tr.m3u
+流程：读取 sources.txt 里的订阅链接 -> 逐个调用面板 API 取分类
+     -> 只下载体育相关分类里的频道 -> 名称白名单/黑名单过滤 -> 清洗名字
+     -> 合并去重 -> 分组排序 -> 输出 tr.m3u
 说明：不做测活（Actions 在国外机房，测出的结果不准，也会占用面板连接数）。
 """
 import os
 import re
 import sys
+import time
 import logging
+import threading
 from urllib.parse import urlparse, parse_qs
 
 import requests
@@ -25,7 +28,20 @@ SOURCES_FILE = "sources.txt"
 OUT_FILE = "tr.m3u"
 STREAM_EXT = os.environ.get("STREAM_EXT", "ts")  # 播放格式：ts 或 m3u8
 MAX_PER_NAME = 3   # 合并后，同名频道（HD/FHD/备用清洗后同名）最多保留几条
-TIMEOUT = 20
+CONNECT_TIMEOUT = 10      # 连接超时（秒）
+READ_TIMEOUT = 20         # 两次收到数据之间的最长等待（秒）
+REQUEST_DEADLINE = 60     # 单次请求从开始到下载完的总时限（秒），防止面板"滴水式"慢速返回
+GLOBAL_DEADLINE = 7 * 60  # 整个脚本最多处理多久（秒），超了就用已拿到的结果收尾
+SCRIPT_START = time.monotonic()
+
+# 分类白名单：只下载名字里带这些词的分类（大幅减少下载量）。
+# 比频道名白名单宽一些，因为分类名常带国家前缀，如 "UK | SKY SPORTS"；
+# 具体哪些频道留下，仍由下面的频道名白名单/黑名单决定。漏了某个分类就在这里加关键词。
+CATEGORY_WHITELIST = re.compile(
+    r"SPORT|FOOTBALL|SOCCER|LEAGUE|LIGA|SERIE|PREMIER|CHAMPIONS|\bUCL\b|\bEPL\b|BEIN|SKY|TNT|\bNOW\b",
+    re.IGNORECASE,
+)
+MAX_CATEGORY_FAILS = 3    # 一个源里累计有这么多个分类下载失败，就放弃这个源剩下的分类
 
 # 你自己的台标对照表：{"关键词": "图片地址"}，面板自带台标为空时才用
 LOGO_MAP = {
@@ -74,8 +90,8 @@ SYMBOL_RE = re.compile(r"[^\w\s]", re.UNICODE)
 
 # ---------------- 网络会话 ----------------
 session = requests.Session()
-session.mount("http://", HTTPAdapter(max_retries=2))
-session.mount("https://", HTTPAdapter(max_retries=2))
+session.mount("http://", HTTPAdapter(max_retries=1))
+session.mount("https://", HTTPAdapter(max_retries=1))
 session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0"})
 
 
@@ -103,17 +119,35 @@ def parse_source(url: str):
     return f"{p.scheme}://{p.netloc}", user, pwd
 
 
-def api(base: str, auth: dict, action: str = None):
-    """调用 player_api.php。异常只保留类型名，避免带密码的 URL 出现在日志里"""
+def api(base: str, auth: dict, action: str = None, **extra):
+    """调用 player_api.php（extra 是额外参数，如 category_id）。异常只保留类型名，避免带密码的 URL 出现在日志里"""
     params = dict(auth)
     if action:
         params["action"] = action
-    try:
-        r = session.get(f"{base}/player_api.php", params=params, timeout=TIMEOUT)
-        r.raise_for_status()
-        return r.json()
-    except Exception as e:
-        raise RuntimeError(f"面板接口请求失败（{action or 'user_info'}）：{type(e).__name__}") from None
+    params.update(extra)
+    out = {}
+
+    def worker():
+        try:
+            r = session.get(f"{base}/player_api.php", params=params,
+                            timeout=(CONNECT_TIMEOUT, READ_TIMEOUT))
+            r.raise_for_status()
+            out["data"] = r.json()
+        except Exception as e:
+            out["err"] = e
+
+    # 请求放进后台线程，主程序最多等 REQUEST_DEADLINE 秒，到点就放弃（后台线程是 daemon，不会拖住程序退出）
+    start = time.monotonic()
+    t = threading.Thread(target=worker, daemon=True)
+    t.start()
+    t.join(REQUEST_DEADLINE)
+    cost = time.monotonic() - start
+    label = action or "user_info"
+    if t.is_alive():
+        raise RuntimeError(f"面板接口请求失败（{label}）：超过总时限 {REQUEST_DEADLINE} 秒仍未下载完")
+    if "err" in out:
+        raise RuntimeError(f"面板接口请求失败（{label}，用时{cost:.0f}秒）：{type(out['err']).__name__}") from None
+    return out["data"]
 
 
 def clean_name(raw: str) -> str:
@@ -157,16 +191,44 @@ def collect(source: str, idx: int):
 
     auth = {"username": user, "password": pwd}
 
+    logging.info(f"[源{idx}] 开始连接面板...")
     info = api(base, auth)
     ui = info.get("user_info", {}) if isinstance(info, dict) else {}
     logging.info(f"[源{idx}] 账号状态: {ui.get('status')} | 最大连接数: {ui.get('max_connections')} | 到期(时间戳): {ui.get('exp_date')}")
 
     cats = api(base, auth, "get_live_categories")
-    streams = api(base, auth, "get_live_streams")
-    if not isinstance(streams, list) or not streams:
-        raise RuntimeError("面板没有返回频道列表（账号可能过期或被封）")
-
     cat_map = {str(c.get("category_id")): c.get("category_name", "") for c in cats} if isinstance(cats, list) else {}
+
+    # 先按分类名挑出体育相关分类，只下载这些分类里的频道（比一次拉全部小得多）
+    wanted = {cid: cname for cid, cname in cat_map.items()
+              if CATEGORY_WHITELIST.search(cname) and not BLACKLIST.search(cname)}
+    t0 = time.monotonic()
+    streams = []
+    if wanted:
+        logging.info(f"[源{idx}] 共 {len(cat_map)} 个分类，选中 {len(wanted)} 个体育相关分类：" + "，".join(wanted.values()))
+        fails = 0
+        for cid, cname in wanted.items():
+            if time.monotonic() - SCRIPT_START > GLOBAL_DEADLINE:
+                logging.warning(f"[源{idx}] 已超过总时限，不再下载剩余分类")
+                break
+            try:
+                part = api(base, auth, "get_live_streams", category_id=cid)
+            except RuntimeError as e:
+                fails += 1
+                logging.warning(f"[源{idx}] 分类「{cname}」下载失败：{e}")
+                if fails >= MAX_CATEGORY_FAILS:
+                    logging.warning(f"[源{idx}] 失败次数过多，放弃这个源剩下的分类")
+                    break
+                continue
+            if isinstance(part, list):
+                streams.extend(part)
+    else:
+        logging.warning(f"[源{idx}] 没有任何分类名带体育关键词，退回下载全部频道（可能较慢）...")
+        streams = api(base, auth, "get_live_streams")
+    count = len(streams) if isinstance(streams, list) else 0
+    logging.info(f"[源{idx}] 频道下载完成：{count} 个，用时 {time.monotonic() - t0:.0f} 秒")
+    if not isinstance(streams, list) or not streams:
+        raise RuntimeError("面板没有返回频道列表（账号可能过期、被封，或体育分类为空）")
 
     items = []
     hit_cats = {}
@@ -191,7 +253,7 @@ def collect(source: str, idx: int):
             "url": f"{base}/live/{user}/{pwd}/{stream_id}.{STREAM_EXT}",
         })
 
-    logging.info(f"[源{idx}] 共 {len(cat_map)} 个分类、{len(streams)} 个频道，筛选出 {len(items)} 个")
+    logging.info(f"[源{idx}] 下载了 {len(streams)} 个频道，最终筛选出 {len(items)} 个")
     if hit_cats:
         logging.info(f"[源{idx}] 命中的分类: " + "，".join(f"{k or '无分类'}({v})" for k, v in hit_cats.items()))
 
@@ -209,6 +271,9 @@ def main():
     all_items = []
     epg_urls = []
     for idx, src in enumerate(sources, start=1):
+        if time.monotonic() - SCRIPT_START > GLOBAL_DEADLINE:
+            logging.warning(f"已超过总时限，从源{idx}起不再处理，直接用已拿到的结果收尾")
+            break
         try:
             items, epg = collect(src, idx)
         except (ValueError, RuntimeError) as e:
