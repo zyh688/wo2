@@ -22,4 +22,4 @@ http://b1iptv.de:80/get.php?username=E6hcvt74qF&password=YNANc97hwC&type=m3u_plu
 http://b1iptv.de:80/get.php?username=NAKBnmCbs8&password=LDXAfzANhC&type=m3u_plus
 http://b1iptv.de:80/get.php?username=ahmetberlin&password=sMbyXzX72cfsgs78&type=m3u_plus
 http://benstv2025.art:8080/get.php?username=Kevim6767&password=hEhTZBnA7m&type=m3u_plus&output=ts
-http://camon1.com:8080/get.php?username=AngyJorgMo01&password=eWtbhkC56&type=m3u
+
