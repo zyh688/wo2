@@ -27,7 +27,7 @@ logging.basicConfig(
 SOURCES_FILE = "sources.txt"
 OUT_FILE = "tr.m3u"
 STREAM_EXT = os.environ.get("STREAM_EXT", "ts")  # 播放格式：ts 或 m3u8
-MAX_PER_NAME = 3   # 合并后，同名频道（HD/FHD/备用清洗后同名）最多保留几条
+MAX_PER_NAME = 8   # 合并后，同名频道（HD/FHD/备用清洗后同名）最多保留几条
 CONNECT_TIMEOUT = 10      # 连接超时（秒）
 READ_TIMEOUT = 20         # 两次收到数据之间的最长等待（秒）
 REQUEST_DEADLINE = 60     # 单次请求从开始到下载完的总时限（秒），防止面板"滴水式"慢速返回
