@@ -1,5 +1,3 @@
-19-5
-
 http://hnsefpop.top:8080/get.php?username=951735992399641&password=b1fd3429430e&type=m3u_plus&output=ts
 
 http://hnsefpop.top:8080/get.php?username=14171572141462&password=51741346610266&type=m3u_plus&output=ts
