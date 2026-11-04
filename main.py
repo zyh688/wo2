@@ -1,9 +1,9 @@
 """
 体育频道整理脚本（Xtream Codes 面板版，支持多个订阅链接）
 
-流程：读取 sources.txt 里的订阅链接 -> 逐个调用面板 API 取分类
-     -> 只下载体育相关分类里的频道 -> 名称白名单/黑名单过滤 -> 清洗名字
-     -> 合并去重 -> 分组排序 -> 输出 tr.m3u
+流程：读取 sources.txt 里的订阅链接 (自动按域名去重) -> 逐个调用面板 API 取分类
+      -> 只下载体育相关分类里的频道 -> 名称白名单/黑名单过滤 -> 清洗名字
+      -> 合并去重 -> 分组排序 -> 输出 tr.m3u
 说明：不做测活（Actions 在国外机房，测出的结果不准，也会占用面板连接数）。
 """
 import os
@@ -35,20 +35,18 @@ GLOBAL_DEADLINE = 7 * 60  # 整个脚本最多处理多久（秒），超了就�
 SCRIPT_START = time.monotonic()
 
 # 分类白名单：只下载名字里带这些词的分类（大幅减少下载量）。
-# 比频道名白名单宽一些，因为分类名常带国家前缀，如 "UK | SKY SPORTS"；
-# 具体哪些频道留下，仍由下面的频道名白名单/黑名单决定。漏了某个分类就在这里加关键词。
 CATEGORY_WHITELIST = re.compile(
     r"SPORT|FOOTBALL|SOCCER|LEAGUE|LIGA|SERIE|PREMIER|CHAMPIONS|\bUCL\b|\bEPL\b|BEIN|SKY|TNT|\bNOW\b",
     re.IGNORECASE,
 )
 MAX_CATEGORY_FAILS = 3    # 一个源里累计有这么多个分类下载失败，就放弃这个源剩下的分类
 
-# 你自己的台标对照表：{"关键词": "图片地址"}，面板自带台标为空时才用
+# 台标对照表：{"关键词": "图片地址"}，面板自带台标为空时才用
 LOGO_MAP = {
     # "SKY SPORTS": "https://raw.githubusercontent.com/你的用户名/仓库/main/logos/sky.png",
 }
 
-# 白名单：只匹配频道名（不匹配 URL、不匹配分组）
+# 白名单：只匹配频道名
 WHITELIST = re.compile(
     r"(SKY\s*SPORTS|PREMIER\s*LEAGUE|CHAMPIONS\s*LEAGUE|SERIE\s*A|LA\s*LIGA|"
     r"NOW\s*SPORTS|NOW\s*TV|\bEPL\b|\bUCL\b|TNT\s*SPORTS|BEIN\s*SPORTS|"
@@ -56,7 +54,7 @@ WHITELIST = re.compile(
     re.IGNORECASE,
 )
 
-# 黑名单：只匹配频道名和分类名，短词都带词边界，避免误杀
+# 黑名单：只匹配频道名和分类名
 BLACKLIST = re.compile(
     r"\b(?:ADULT|XXX|PORN|PLAYBOY|PENTHOUSE|HUSTLER|EROTIC|RADIO|RADYO|"
     r"MOVIES?|FILMS?|SERIES|DIZI|SINEMA|NETFLIX)\b|\+18|18\+|"
@@ -64,7 +62,7 @@ BLACKLIST = re.compile(
     re.IGNORECASE,
 )
 
-# 分组规则：从上到下，先匹配到的先用
+# 分组规则
 GROUP_RULES = [
     ("英超", re.compile(r"PREMIER\s*LEAGUE|\bEPL\b", re.I)),
     ("欧冠", re.compile(r"CHAMPIONS\s*LEAGUE|\bUCL\b", re.I)),
@@ -96,16 +94,24 @@ session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64;
 
 
 def read_sources():
-    """读取 sources.txt：一行一个链接，# 开头的是注释，重复的行只算一次"""
+    """读取 sources.txt：读取全部链接，并对网址域名去重（相同域名服务器只保留一个）"""
     if not os.path.exists(SOURCES_FILE):
         return []
     links = []
+    seen_domains = set()
+    
     with open(SOURCES_FILE, "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if line and not line.startswith("#"):
-                links.append(line)
-    return list(dict.fromkeys(links))
+                p = urlparse(line)
+                domain = p.netloc
+                # 域名（如 host:port）相同就跳过，实现不重复网址
+                if domain not in seen_domains:
+                    seen_domains.add(domain)
+                    links.append(line)
+                    
+    return links
 
 
 def parse_source(url: str):
@@ -120,7 +126,7 @@ def parse_source(url: str):
 
 
 def api(base: str, auth: dict, action: str = None, **extra):
-    """调用 player_api.php（extra 是额外参数，如 category_id）。异常只保留类型名，避免带密码的 URL 出现在日志里"""
+    """调用 player_api.php"""
     params = dict(auth)
     if action:
         params["action"] = action
@@ -136,7 +142,6 @@ def api(base: str, auth: dict, action: str = None, **extra):
         except Exception as e:
             out["err"] = e
 
-    # 请求放进后台线程，主程序最多等 REQUEST_DEADLINE 秒，到点就放弃（后台线程是 daemon，不会拖住程序退出）
     start = time.monotonic()
     t = threading.Thread(target=worker, daemon=True)
     t.start()
@@ -177,12 +182,11 @@ def pick_logo(icon: str, name: str) -> str:
 
 
 def attr(value: str) -> str:
-    """m3u 属性里不能有双引号"""
     return str(value).replace('"', "'")
 
 
 def collect(source: str, idx: int):
-    """处理一个订阅链接，返回 (候选频道列表, EPG 地址)。失败时抛异常，由外面跳过这个源"""
+    """处理一个订阅链接"""
     base, user, pwd = parse_source(source)
 
     # 让 Actions 日志自动遮盖账号密码
@@ -191,7 +195,7 @@ def collect(source: str, idx: int):
 
     auth = {"username": user, "password": pwd}
 
-    logging.info(f"[源{idx}] 开始连接面板...")
+    logging.info(f"[源{idx}] 开始连接面板 ({base})...")
     info = api(base, auth)
     ui = info.get("user_info", {}) if isinstance(info, dict) else {}
     logging.info(f"[源{idx}] 账号状态: {ui.get('status')} | 最大连接数: {ui.get('max_connections')} | 到期(时间戳): {ui.get('exp_date')}")
@@ -199,7 +203,6 @@ def collect(source: str, idx: int):
     cats = api(base, auth, "get_live_categories")
     cat_map = {str(c.get("category_id")): c.get("category_name", "") for c in cats} if isinstance(cats, list) else {}
 
-    # 先按分类名挑出体育相关分类，只下载这些分类里的频道（比一次拉全部小得多）
     wanted = {cid: cname for cid, cname in cat_map.items()
               if CATEGORY_WHITELIST.search(cname) and not BLACKLIST.search(cname)}
     t0 = time.monotonic()
@@ -225,6 +228,7 @@ def collect(source: str, idx: int):
     else:
         logging.warning(f"[源{idx}] 没有任何分类名带体育关键词，退回下载全部频道（可能较慢）...")
         streams = api(base, auth, "get_live_streams")
+        
     count = len(streams) if isinstance(streams, list) else 0
     logging.info(f"[源{idx}] 频道下载完成：{count} 个，用时 {time.monotonic() - t0:.0f} 秒")
     if not isinstance(streams, list) or not streams:
@@ -264,9 +268,9 @@ def collect(source: str, idx: int):
 def main():
     sources = read_sources()
     if not sources:
-        logging.error(f"没有在 {SOURCES_FILE} 里找到订阅链接")
+        logging.error(f"没有在 {SOURCES_FILE} 里找到有效订阅链接")
         sys.exit(1)
-    logging.info(f"读取到 {len(sources)} 个订阅链接")
+    logging.info(f"从 {SOURCES_FILE} 中提取出 {len(sources)} 个不重复域名的订阅链接")
 
     all_items = []
     epg_urls = []
@@ -282,7 +286,7 @@ def main():
         all_items.extend(items)
         epg_urls.append(epg)
 
-    # 合并去重：同一个播放地址只留一次；同名频道最多留 MAX_PER_NAME 条（靠前的源优先）
+    # 合并去重
     kept = []
     seen_urls = set()
     name_count = {}
@@ -296,7 +300,7 @@ def main():
         kept.append(c)
 
     if not kept:
-        logging.error("所有源合并后没有任何频道，不生成文件。请检查链接是否有效、白名单/黑名单规则是否合适。")
+        logging.error("所有源合并后没有任何频道，不生成文件。")
         sys.exit(1)
 
     kept.sort(key=lambda x: (GROUP_ORDER.index(x["group"]), x["name"]))
