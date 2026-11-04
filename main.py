@@ -1,10 +1,10 @@
 """
-体育频道整理脚本（Xtream Codes 面板版，支持多个订阅链接）
+频道整理脚本（Xtream Codes 面板版，支持多个订阅链接）
+只保留：英超、欧冠、TNT 等体育频道 + 4K 体育频道 + 自然/动物频道
 
-流程：读取 sources.txt 里的订阅链接 (自动按域名去重) -> 逐个调用面板 API 取分类
-      -> 只下载体育相关分类里的频道 -> 名称白名单/黑名单过滤 -> 清洗名字
-      -> 合并去重 -> 分组排序 -> 输出 tr.m3u
-说明：不做测活（Actions 在国外机房，测出的结果不准，也会占用面板连接数）。
+流程：读取 sources.txt 里的订阅链接 -> 逐个调用面板 API 取分类
+     -> 只下载相关分类里的频道 -> 名称过滤 -> 清洗名字
+     -> 合并去重 -> 分组排序 -> 输出 tr.m3u
 """
 import os
 import re
@@ -27,58 +27,74 @@ logging.basicConfig(
 SOURCES_FILE = "sources.txt"
 OUT_FILE = "tr.m3u"
 STREAM_EXT = os.environ.get("STREAM_EXT", "ts")  # 播放格式：ts 或 m3u8
-MAX_PER_NAME = 3   # 合并后，同名频道（HD/FHD/备用清洗后同名）最多保留几条
-CONNECT_TIMEOUT = 10      # 连接超时（秒）
-READ_TIMEOUT = 20         # 两次收到数据之间的最长等待（秒）
-REQUEST_DEADLINE = 60     # 单次请求从开始到下载完的总时限（秒），防止面板"滴水式"慢速返回
-GLOBAL_DEADLINE = 7 * 60  # 整个脚本最多处理多久（秒），超了就用已拿到的结果收尾
+MAX_PER_NAME = 3          # 同名频道最多保留几条
+CONNECT_TIMEOUT = 10
+READ_TIMEOUT = 20
+REQUEST_DEADLINE = 60
+GLOBAL_DEADLINE = 7 * 60
 SCRIPT_START = time.monotonic()
+MAX_CATEGORY_FAILS = 3
 
-# 分类白名单：只下载名字里带这些词的分类（大幅减少下载量）。
-CATEGORY_WHITELIST = re.compile(
-    r"SPORT|FOOTBALL|SOCCER|LEAGUE|LIGA|SERIE|PREMIER|CHAMPIONS|\bUCL\b|\bEPL\b|BEIN|SKY|TNT|\bNOW\b",
-    re.IGNORECASE,
-)
-MAX_CATEGORY_FAILS = 3    # 一个源里累计有这么多个分类下载失败，就放弃这个源剩下的分类
-
-# 台标对照表：{"关键词": "图片地址"}，面板自带台标为空时才用
 LOGO_MAP = {
-    # "SKY SPORTS": "https://raw.githubusercontent.com/你的用户名/仓库/main/logos/sky.png",
+    # "SKY SPORTS": "https://.../sky.png",
 }
 
-# 白名单：只匹配频道名
-WHITELIST = re.compile(
-    r"(SKY\s*SPORTS|PREMIER\s*LEAGUE|CHAMPIONS\s*LEAGUE|SERIE\s*A|LA\s*LIGA|"
-    r"NOW\s*SPORTS|NOW\s*TV|\bEPL\b|\bUCL\b|TNT\s*SPORTS|BEIN\s*SPORTS|"
-    r"SUPERSPORT|SPORTS?|FOOTBALL|SOCCER)",
+# ---------------- 筛选规则 ----------------
+# 自然/动物关键词（频道名和分类名都用它）
+NATURE_RE = re.compile(
+    r"\b(?:NATURE|WILD|WILDLIFE|ANIMALS?|PLANET|NAT\s*GEO|NATIONAL\s*GEOGRAPHIC|"
+    r"BBC\s*EARTH|SAFARI|PETS?)\b",
     re.IGNORECASE,
 )
 
-# 黑名单：只匹配频道名和分类名
+# 体育频道名白名单（比原来窄：不再放行所有带 SPORT 的名字）
+# 想多要别的台（如 ESPN、DAZN、EUROSPORT）就往这里加
+SPORT_WL = re.compile(
+    r"(PREMIER\s*LEAGUE|\bEPL\b|CHAMPIONS\s*LEAGUE|\bUCL\b|"
+    r"TNT\s*SPORTS|BT\s*SPORT|SKY\s*SPORTS|BEIN\s*SPORTS|NOW\s*SPORTS|"
+    r"LA\s*LIGA|SERIE\s*A|SUPERSPORT)",
+    re.IGNORECASE,
+)
+
+# 4K：名字或分类里带 4K/UHD，并且同时带体育关键词，才算 4K 体育频道
+FOUR_K_RE = re.compile(r"\b(?:4K|UHD)\b", re.IGNORECASE)
+SPORT_LOOSE = re.compile(r"SPORT|FOOTBALL|SOCCER|LEAGUE|LIGA|BEIN|TNT|\bBT\b", re.IGNORECASE)
+
+# 分类白名单：决定"下载哪些分类"，宽一点没关系，最终由上面的频道规则决定留谁
+CATEGORY_WHITELIST = re.compile(
+    r"SPORT|FOOTBALL|SOCCER|LEAGUE|LIGA|SERIE|PREMIER|CHAMPIONS|\bUCL\b|\bEPL\b|"
+    r"BEIN|SKY|TNT|\bBT\b|\bNOW\b|"
+    r"NATURE|WILD|ANIMAL|PLANET|EARTH|GEO|DOCU|DISCOVERY|PETS?|\b4K\b|\bUHD\b",
+    re.IGNORECASE,
+)
+
+# 黑名单：匹配频道名和分类名，全部带词边界
 BLACKLIST = re.compile(
     r"\b(?:ADULT|XXX|PORN|PLAYBOY|PENTHOUSE|HUSTLER|EROTIC|RADIO|RADYO|"
-    r"MOVIES?|FILMS?|SERIES|DIZI|SINEMA|NETFLIX)\b|\+18|18\+|"
-    r"TURK|TÜRK|TRT|BEINTRK|\bTR\b",
+    r"MOVIES?|FILMS?|SERIES|DIZI|SINEMA|NETFLIX|"
+    r"TURK|TÜRK|TRT|BEINTRK|TR)\b|\+18|18\+",
     re.IGNORECASE,
 )
 
-# 分组规则
+# 分组规则：从上到下，先匹配到的先用
 GROUP_RULES = [
     ("英超", re.compile(r"PREMIER\s*LEAGUE|\bEPL\b", re.I)),
     ("欧冠", re.compile(r"CHAMPIONS\s*LEAGUE|\bUCL\b", re.I)),
+    ("TNT", re.compile(r"TNT\s*SPORTS|BT\s*SPORT", re.I)),
+    ("自然动物", NATURE_RE),
+    ("4K", FOUR_K_RE),
     ("意甲", re.compile(r"SERIE\s*A", re.I)),
     ("西甲", re.compile(r"LA\s*LIGA", re.I)),
     ("BEIN", re.compile(r"BEIN", re.I)),
     ("SKY SPORTS", re.compile(r"SKY\s*SPORTS", re.I)),
     ("NOW", re.compile(r"\bNOW\b", re.I)),
-    ("TNT", re.compile(r"TNT\s*SPORTS", re.I)),
 ]
 DEFAULT_GROUP = "其他体育"
 GROUP_ORDER = [g for g, _ in GROUP_RULES] + [DEFAULT_GROUP]
 
-# 名字清洗
+# 名字清洗（保留 4K/UHD/PLUS/EU，避免不同频道被合并成同名）
 QUALITY_RE = re.compile(
-    r"\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|\d+FPS|FPS|EUROPE|EURO|EUR|EU|VIP|MOBILE|HQ)\b",
+    r"\b(FHD|HD|SD|HEVC|RAW|1080P|720P|\d+FPS|FPS|VIP|MOBILE|HQ)\b",
     re.I,
 )
 BACKUP_RE = re.compile(r"\b(YEDEK|BACKUP|ALT|TEST)\b", re.I)
@@ -94,28 +110,18 @@ session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64;
 
 
 def read_sources():
-    """读取 sources.txt：读取全部链接，并对网址域名去重（相同域名服务器只保留一个）"""
     if not os.path.exists(SOURCES_FILE):
         return []
     links = []
-    seen_domains = set()
-    
     with open(SOURCES_FILE, "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if line and not line.startswith("#"):
-                p = urlparse(line)
-                domain = p.netloc
-                # 域名（如 host:port）相同就跳过，实现不重复网址
-                if domain not in seen_domains:
-                    seen_domains.add(domain)
-                    links.append(line)
-                    
-    return links
+                links.append(line)
+    return list(dict.fromkeys(links))
 
 
 def parse_source(url: str):
-    """从 get.php?username=..&password=.. 链接拆出面板地址和账号密码"""
     p = urlparse(url.strip())
     q = parse_qs(p.query)
     user = q.get("username", [""])[0]
@@ -126,7 +132,6 @@ def parse_source(url: str):
 
 
 def api(base: str, auth: dict, action: str = None, **extra):
-    """调用 player_api.php"""
     params = dict(auth)
     if action:
         params["action"] = action
@@ -165,10 +170,25 @@ def clean_name(raw: str) -> str:
     return n or raw.strip().upper()
 
 
-def pick_group(name: str) -> str:
+def accept(raw_name: str, cat_name: str) -> bool:
+    """频道是否保留：体育白名单 / 自然动物 / 4K 体育"""
+    if SPORT_WL.search(raw_name):
+        return True
+    if NATURE_RE.search(raw_name) or NATURE_RE.search(cat_name):
+        return True
+    text = f"{raw_name} {cat_name}"
+    return bool(FOUR_K_RE.search(text) and SPORT_LOOSE.search(text))
+
+
+def pick_group(name: str, cat_name: str) -> str:
     for group, rule in GROUP_RULES:
         if rule.search(name):
             return group
+    # 名字里没线索时，用分类名兜底
+    if NATURE_RE.search(cat_name):
+        return "自然动物"
+    if FOUR_K_RE.search(cat_name):
+        return "4K"
     return DEFAULT_GROUP
 
 
@@ -186,16 +206,14 @@ def attr(value: str) -> str:
 
 
 def collect(source: str, idx: int):
-    """处理一个订阅链接"""
     base, user, pwd = parse_source(source)
 
-    # 让 Actions 日志自动遮盖账号密码
     print(f"::add-mask::{user}")
     print(f"::add-mask::{pwd}")
 
     auth = {"username": user, "password": pwd}
 
-    logging.info(f"[源{idx}] 开始连接面板 ({base})...")
+    logging.info(f"[源{idx}] 开始连接面板...")
     info = api(base, auth)
     ui = info.get("user_info", {}) if isinstance(info, dict) else {}
     logging.info(f"[源{idx}] 账号状态: {ui.get('status')} | 最大连接数: {ui.get('max_connections')} | 到期(时间戳): {ui.get('exp_date')}")
@@ -208,7 +226,7 @@ def collect(source: str, idx: int):
     t0 = time.monotonic()
     streams = []
     if wanted:
-        logging.info(f"[源{idx}] 共 {len(cat_map)} 个分类，选中 {len(wanted)} 个体育相关分类：" + "，".join(wanted.values()))
+        logging.info(f"[源{idx}] 共 {len(cat_map)} 个分类，选中 {len(wanted)} 个：" + "，".join(wanted.values()))
         fails = 0
         for cid, cname in wanted.items():
             if time.monotonic() - SCRIPT_START > GLOBAL_DEADLINE:
@@ -226,13 +244,12 @@ def collect(source: str, idx: int):
             if isinstance(part, list):
                 streams.extend(part)
     else:
-        logging.warning(f"[源{idx}] 没有任何分类名带体育关键词，退回下载全部频道（可能较慢）...")
+        logging.warning(f"[源{idx}] 没有任何分类命中关键词，退回下载全部频道（可能较慢）...")
         streams = api(base, auth, "get_live_streams")
-        
     count = len(streams) if isinstance(streams, list) else 0
     logging.info(f"[源{idx}] 频道下载完成：{count} 个，用时 {time.monotonic() - t0:.0f} 秒")
     if not isinstance(streams, list) or not streams:
-        raise RuntimeError("面板没有返回频道列表（账号可能过期、被封，或体育分类为空）")
+        raise RuntimeError("面板没有返回频道列表（账号可能过期、被封，或相关分类为空）")
 
     items = []
     hit_cats = {}
@@ -242,16 +259,16 @@ def collect(source: str, idx: int):
         stream_id = s.get("stream_id")
         if not raw_name or stream_id is None:
             continue
-        if not WHITELIST.search(raw_name):
-            continue
         if BLACKLIST.search(raw_name) or BLACKLIST.search(cat_name):
+            continue
+        if not accept(raw_name, cat_name):
             continue
 
         name = clean_name(raw_name)
         hit_cats[cat_name] = hit_cats.get(cat_name, 0) + 1
         items.append({
             "name": name,
-            "group": pick_group(name),
+            "group": pick_group(name, cat_name),
             "logo": pick_logo(s.get("stream_icon") or "", name),
             "epg_id": s.get("epg_channel_id") or "",
             "url": f"{base}/live/{user}/{pwd}/{stream_id}.{STREAM_EXT}",
@@ -268,15 +285,15 @@ def collect(source: str, idx: int):
 def main():
     sources = read_sources()
     if not sources:
-        logging.error(f"没有在 {SOURCES_FILE} 里找到有效订阅链接")
+        logging.error(f"没有在 {SOURCES_FILE} 里找到订阅链接")
         sys.exit(1)
-    logging.info(f"从 {SOURCES_FILE} 中提取出 {len(sources)} 个不重复域名的订阅链接")
+    logging.info(f"读取到 {len(sources)} 个订阅链接")
 
     all_items = []
     epg_urls = []
     for idx, src in enumerate(sources, start=1):
         if time.monotonic() - SCRIPT_START > GLOBAL_DEADLINE:
-            logging.warning(f"已超过总时限，从源{idx}起不再处理，直接用已拿到的结果收尾")
+            logging.warning(f"已超过总时限，从源{idx}起不再处理")
             break
         try:
             items, epg = collect(src, idx)
@@ -286,7 +303,6 @@ def main():
         all_items.extend(items)
         epg_urls.append(epg)
 
-    # 合并去重
     kept = []
     seen_urls = set()
     name_count = {}
@@ -300,7 +316,7 @@ def main():
         kept.append(c)
 
     if not kept:
-        logging.error("所有源合并后没有任何频道，不生成文件。")
+        logging.error("所有源合并后没有任何频道，不生成文件。请检查链接是否有效、筛选规则是否合适。")
         sys.exit(1)
 
     kept.sort(key=lambda x: (GROUP_ORDER.index(x["group"]), x["name"]))
