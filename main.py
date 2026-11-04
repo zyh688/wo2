@@ -12,6 +12,7 @@ import sys
 import time
 import logging
 import threading
+from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlparse, parse_qs
 
 import requests
@@ -31,7 +32,9 @@ MAX_PER_NAME = 3          # 同名频道最多保留几条
 CONNECT_TIMEOUT = 10
 READ_TIMEOUT = 20
 REQUEST_DEADLINE = 60
-GLOBAL_DEADLINE = 7 * 60
+GLOBAL_DEADLINE = 40 * 60  # 整个脚本最多跑多久（秒），要把所有源跑完就放宽
+WORKERS = int(os.environ.get("WORKERS", "8"))  # 同时处理几个源
+MAX_EPG = 3               # url-tvg 里最多写几个 EPG 地址（很多播放器只认前几个）
 SCRIPT_START = time.monotonic()
 MAX_CATEGORY_FAILS = 3
 
@@ -291,17 +294,27 @@ def main():
 
     all_items = []
     epg_urls = []
-    for idx, src in enumerate(sources, start=1):
+
+    def run_one(args):
+        idx, src = args
         if time.monotonic() - SCRIPT_START > GLOBAL_DEADLINE:
-            logging.warning(f"已超过总时限，从源{idx}起不再处理")
-            break
+            logging.warning(f"[源{idx}] 已超过总时限，跳过")
+            return None
         try:
-            items, epg = collect(src, idx)
+            return collect(src, idx)
         except (ValueError, RuntimeError) as e:
             logging.warning(f"[源{idx}] 跳过：{e}")
-            continue
-        all_items.extend(items)
-        epg_urls.append(epg)
+            return None
+
+    # 不同源是不同面板/账号，并行处理互不影响；map 按源顺序返回，靠前的源仍然优先
+    with ThreadPoolExecutor(max_workers=WORKERS) as ex:
+        results = list(ex.map(run_one, enumerate(sources, start=1)))
+
+    for r in results:
+        if r:
+            items, epg = r
+            all_items.extend(items)
+            epg_urls.append(epg)
 
     kept = []
     seen_urls = set()
@@ -322,7 +335,7 @@ def main():
     kept.sort(key=lambda x: (GROUP_ORDER.index(x["group"]), x["name"]))
 
     with open(OUT_FILE, "w", encoding="utf-8") as f:
-        f.write(f'#EXTM3U url-tvg="{",".join(epg_urls)}"\n')
+        f.write(f'#EXTM3U url-tvg="{",".join(epg_urls[:MAX_EPG])}"\n')
         for c in kept:
             f.write(
                 f'#EXTINF:-1 tvg-id="{attr(c["epg_id"])}" tvg-name="{attr(c["name"])}" '
